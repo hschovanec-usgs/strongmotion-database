@@ -4,20 +4,17 @@ channels:
 - defaults
 dependencies:
 - amptools
-- defusedxml
-- descartes
-- docutils
-- libcomcat
+- jupyter
+- lxml
 - matplotlib
 - numpy
 - obspy
 - pandas
-- ps2ff
-- psutil
-- pyproj
 - pytest
 - pytest-cov
 - python=3.5
-- python-daemon
-- scikit-image
-- scipy
+- xlrd
+- xlwt
+- openpyxl
+- obspy
+- xlsxwrite
