@@ -2,7 +2,9 @@ Status
 =======
 [![Build Status](https://travis-ci.org/usgs/strongmotion-database.svg?branch=master)](https://travis-ci.org/usgs/strongmotion-database)
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4edbe781a653498c992dbc43824b760f)](https://www.codacy.com/app/hschovanec-usgs/strongmotion-database?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=usgs/strongmotion-database&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/552718dc32df4218b2037084f9143702)](https://www.codacy.com/app/hschovanec-usgs/strongmotion-database?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=usgs/strongmotion-database&amp;utm_campaign=Badge_Grade)
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/552718dc32df4218b2037084f9143702)](https://www.codacy.com/app/hschovanec-usgs/strongmotion-database?utm_source=github.com&utm_medium=referral&utm_content=usgs/strongmotion-database&utm_campaign=Badge_Coverage)
 
 
 strongmotion-database
