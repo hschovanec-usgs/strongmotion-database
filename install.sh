@@ -20,7 +20,7 @@ source $prof
 echo "Path:"
 echo $PATH
 
-VENV=strongmotion-database
+VENV=smdb
 
 # Is the reset flag set?
 reset=0
@@ -66,7 +66,7 @@ if [ $? -ne 0 ]; then
     bash miniconda.sh -f -b -p $HOME/miniconda
 
     # Need this to get conda into path
-    . $HOME/miniconda/etc/profile.d/conda.sh
+    . $_CONDA_ROOT/etc/profile.d/conda.sh
 
     # remove the shell script
     rm miniconda.sh
@@ -78,9 +78,10 @@ echo "PATH:"
 echo $PATH
 echo ""
 
-
-# Choose an environment file based on platform
-echo ". $HOME/miniconda/etc/profile.d/conda.sh" >> $prof
+grep "/etc/profile.d/conda.sh" $prof
+if [ $? -ne 0 ]; then
+   echo ". $_CONDA_ROOT/etc/profile.d/conda.sh" >> $prof
+fi
 
 # If the user has specified the -r (reset) flag, then create an
 # environment based on only the named dependencies, without
@@ -110,8 +111,10 @@ fi
 echo "Activating the $VENV virtual environment"
 conda activate $VENV
 
+conda info --envs | grep "\*"
+
 # This package
-echo "Installing strongmotion-database..."
+echo "Installing smdb..."
 pip install -e .
 
 # Install default profile
